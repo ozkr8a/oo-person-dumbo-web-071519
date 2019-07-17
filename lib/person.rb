@@ -1,8 +1,8 @@
 # your code goes here
 
 class Person
-  attr_reader :name, :happiness
-  attr_accessor :bank_account, :hygiene
+  attr_reader :name
+  attr_accessor :bank_account, :hygiene, :happiness
   
   def initialize(name_arg)
     @name= name_arg
