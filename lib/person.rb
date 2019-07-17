@@ -84,8 +84,8 @@ class Person
   
   def start_conversation(person_arg, topic)
     if topic == "politics"
-      person_arg.happiness -= 1
-      self.happiness -= 1
+      person_arg.happiness -= 2
+      self.happiness -= 2
       
       person_arg.happiness = check_limits(person_arg.happiness)
       self.happiness = check_limits(self.happiness)
