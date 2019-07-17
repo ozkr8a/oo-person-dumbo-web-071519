@@ -9,6 +9,8 @@ class Person
     @bank_account= 25
     @happiness = 8
     @hygiene = 8
+    
+    check_limits(@happiness)
   end
   
   def clean?
