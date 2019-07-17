@@ -19,12 +19,12 @@ class Person
     @happiness > 7
   end
   
-  def happy_limit 
-    if @happiness > 0 && @happiness < 10
-      return @happiness
-    end
+  # def happy_limit 
+  #   if @happiness > 0 && @happiness < 10
+  #     return @happiness
+  #   end
     
-  end
+  # end
   
   def get_paid(salary)
     @bank_account += salary
