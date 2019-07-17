@@ -12,7 +12,17 @@ class Person
     @hygiene= 8
     
     #binding.pry 
-    @happiness = check_limits(@happiness)
+    #@happiness = check_limits(@happiness)
+  end
+  
+  def happiness=(val)
+    if val < 0 
+      val = 0
+    elsif val > 10 
+      val = 10
+    end
+    
+    return val
   end
   
   def clean?
