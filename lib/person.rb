@@ -67,9 +67,10 @@ class Person
   
   def work_out
     @happiness += 2
-    @happiness = check_limits(@happiness)
+    self.happiness(@happiness)
+    
     @hygiene -= 3
-    @hygiene = check_limits(@hygiene)
+    self.hygiene=(@hygiene)
     "♪ another one bites the dust ♫"
   end
   
