@@ -79,7 +79,6 @@ class Person
     friend.happiness += 3
     
     self.happiness=(@happiness)
-    friend.happiness = check_limits(friend.happiness)
     
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
