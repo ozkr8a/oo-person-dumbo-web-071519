@@ -97,9 +97,6 @@ class Person
       person_arg.happiness += 1
       self.happiness += 1
       
-      person_arg.happiness = check_limits(person_arg.happiness)
-      self.happiness = check_limits(self.happiness)
-      
       return "blah blah sun blah rain"
     else
       
