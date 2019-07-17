@@ -23,7 +23,7 @@ class Person
       happiness = 10
     end
     
-    @happiness = val
+    @happiness = happiness
   end
   
   def clean?
