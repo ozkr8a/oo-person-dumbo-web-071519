@@ -16,7 +16,7 @@ class Person
     #@happiness = check_limits(@happiness)
   end
   
-  def happiness=(val)
+  def happiness=(happiness)
     if val < 0 
       val = 0
     elsif val > 10 
