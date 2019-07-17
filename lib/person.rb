@@ -23,7 +23,7 @@ class Person
       val = 10
     end
     
-    return val
+    @happiness = val
   end
   
   def clean?
