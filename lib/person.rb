@@ -26,6 +26,16 @@ class Person
     @happiness = happiness
   end
   
+    def hygiene=(hygiene)
+    if hygiene < 0 
+      hygiene = 0
+    elsif hygiene > 10 
+      hygiene = 10
+    end
+    
+    @hygiene = hygiene
+  end
+  
   def clean?
     @hygiene > 7
   end
