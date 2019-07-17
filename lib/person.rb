@@ -65,12 +65,17 @@ class Person
       
       check_limits(person_arg.happiness)
       check_limits(self.happiness)
+      
       return "blah blah partisan blah lobbyist"
       
     elsif topic == "weather"
     
       person_arg.happiness += 1
       self.happiness += 1
+      
+      check_limits(person_arg.happiness)
+      check_limits(self.happiness)
+      
       return "blah blah sun blah rain"
     else
       
