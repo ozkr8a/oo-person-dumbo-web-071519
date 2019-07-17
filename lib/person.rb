@@ -44,6 +44,16 @@ class Person
     @happiness > 7
   end
   
+  def check_limits(val)
+    if val < 0 
+      val = 0
+    elsif val > 10 
+      val = 10
+    end
+    
+    return val
+  end
+  
   def get_paid(salary)
     @bank_account += salary
     "all about the benjamins"
