@@ -13,7 +13,6 @@ class Person
     @hygiene= 8
     
     #binding.pry 
-    #@happiness = check_limits(@happiness)
   end
   
   def happiness=(happiness)
