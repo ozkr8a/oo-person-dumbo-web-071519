@@ -49,10 +49,13 @@ class Person
   
   def call_friend(friend)
     @happiness += 3
-    if !(@happiness > 0 && @happiness < 10)
-      @happiness = 10
-    end
     friend.happiness += 3
+    
+    if @happiness > 10
+      @happiness = 10
+      elsif friend.happiness > 10
+        friend.happiness = 10
+    end
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
   
