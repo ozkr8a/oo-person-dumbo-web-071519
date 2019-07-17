@@ -45,9 +45,9 @@ class Person
   def work_out
     
     @happiness += 2
-    check_limits(@happiness)
+    @happiness = check_limits(@happiness)
     @hygiene -= 3
-    check_limits(@hygiene)
+    @hygiene check_limits(@hygiene)
     "♪ another one bites the dust ♫"
   end
   
@@ -55,8 +55,8 @@ class Person
     @happiness += 3
     friend.happiness += 3
     
-    check_limits(@happiness)
-    check_limits(friend.happiness)
+    @happiness = check_limits(@happiness)
+    friend.happiness = check_limits(friend.happiness)
     
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
@@ -66,8 +66,8 @@ class Person
       person_arg.happiness -= 1
       self.happiness -= 1
       
-      check_limits(person_arg.happiness)
-      check_limits(self.happiness)
+      person_arg.happiness = check_limits(person_arg.happiness)
+      self.happiness = check_limits(self.happiness)
       
       return "blah blah partisan blah lobbyist"
       
