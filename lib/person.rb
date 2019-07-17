@@ -11,7 +11,7 @@ class Person
     @happiness = 8
     @hygiene = 8
     
-    binding.pry 
+    #binding.pry 
   end
   
   def clean?
