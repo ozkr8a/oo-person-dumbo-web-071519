@@ -1,4 +1,5 @@
 # your code goes here
+require 'pry'
 
 class Person
   attr_reader :name
@@ -10,7 +11,7 @@ class Person
     @happiness = 8
     @hygiene = 8
     
-    
+    binding.pry 
   end
   
   def clean?
