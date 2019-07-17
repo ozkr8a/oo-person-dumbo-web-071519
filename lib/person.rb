@@ -65,7 +65,6 @@ class Person
   end
   
   def work_out
-    
     @happiness += 2
     @happiness = check_limits(@happiness)
     @hygiene -= 3
