@@ -17,10 +17,10 @@ class Person
   end
   
   def happiness=(happiness)
-    if val < 0 
-      val = 0
-    elsif val > 10 
-      val = 10
+    if happiness < 0 
+      happiness = 0
+    elsif happiness > 10 
+      happiness = 10
     end
     
     @happiness = val
