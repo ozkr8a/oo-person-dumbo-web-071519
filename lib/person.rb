@@ -62,6 +62,7 @@ class Person
   def take_bath
     @hygiene += 4
     "♪ Rub-a-dub just relaxing in the tub ♫"
+    @hygiene = check_limits(@hygiene)
   end
   
   def work_out
