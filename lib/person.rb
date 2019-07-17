@@ -19,10 +19,10 @@ class Person
     @happiness > 7
   end
   
-  # def happy_limit 
-  #   if @happiness > 0 && @happiness < 10
-  #     return @happiness
-  #   end
+  def check_limits(val)
+    if @happiness > 0 && @happiness < 10
+      return @happiness
+    end
     
   # end
   
