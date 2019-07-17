@@ -56,6 +56,7 @@ class Person
       elsif friend.happiness > 10
         friend.happiness = 10
     end
+    
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
   
