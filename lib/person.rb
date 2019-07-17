@@ -8,8 +8,8 @@ class Person
   def initialize(name_arg)
     @name= name_arg
     @bank_account= 25
-    @happiness = 8
-    @hygiene = 8
+    @happiness= 8
+    @hygiene= 8
     
     #binding.pry 
   end
