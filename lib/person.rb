@@ -42,11 +42,9 @@ class Person
   def work_out
     
     @happiness += 2
-    if !(@happiness > 0 && @happiness < 10)
-      @happiness = 10
-    end
-    
+    check_limits(@happiness)
     @hygiene -= 3
+    check_limits(@hygiene)
     "♪ another one bites the dust ♫"
   end
   
@@ -54,11 +52,8 @@ class Person
     @happiness += 3
     friend.happiness += 3
     
-    if @happiness > 10
-      @happiness = 10
-      elsif friend.happiness > 10
-        friend.happiness = 10
-    end
+    check_limits(@happiness)
+    check_limits(friend.happiness)
     
     "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
@@ -67,6 +62,9 @@ class Person
     if topic == "politics"
       person_arg.happiness -= 1
       self.happiness -= 1
+      
+      check_limits(person_arg.happiness)
+      check_limits(self.happiness)
       return "blah blah partisan blah lobbyist"
       
     elsif topic == "weather"
