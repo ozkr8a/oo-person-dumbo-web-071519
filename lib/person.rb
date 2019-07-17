@@ -67,7 +67,7 @@ class Person
   
   def work_out
     @happiness += 2
-    self.happiness(@happiness)
+    self.happiness=(@happiness)
     
     @hygiene -= 3
     self.hygiene=(@hygiene)
