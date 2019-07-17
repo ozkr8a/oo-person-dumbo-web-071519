@@ -47,7 +47,7 @@ class Person
     @happiness += 2
     @happiness = check_limits(@happiness)
     @hygiene -= 3
-    @hygiene check_limits(@hygiene)
+    @hygiene = check_limits(@hygiene)
     "♪ another one bites the dust ♫"
   end
   
